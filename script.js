@@ -80,16 +80,25 @@ buttonDaily.addEventListener("click", function () {
   dailyHours.forEach((e) => (e.style.display = "block"));
   weeklyHours.forEach((e) => (e.style.display = "none"));
   monthlyHours.forEach((e) => (e.style.display = "none"));
+  buttonDaily.classList.add("clicked");
+  buttonWeekly.classList.remove("clicked");
+  buttonMonthly.classList.remove("clicked");
 });
 
 buttonWeekly.addEventListener("click", function () {
   dailyHours.forEach((e) => (e.style.display = "none"));
   weeklyHours.forEach((e) => (e.style.display = "block"));
   monthlyHours.forEach((e) => (e.style.display = "none"));
+  buttonDaily.classList.remove("clicked");
+  buttonWeekly.classList.add("clicked");
+  buttonMonthly.classList.remove("clicked");
 });
 
 buttonMonthly.addEventListener("click", function () {
   dailyHours.forEach((e) => (e.style.display = "none"));
   weeklyHours.forEach((e) => (e.style.display = "none"));
   monthlyHours.forEach((e) => (e.style.display = "block"));
+  buttonDaily.classList.remove("clicked");
+  buttonWeekly.classList.remove("clicked");
+  buttonMonthly.classList.add("clicked");
 });

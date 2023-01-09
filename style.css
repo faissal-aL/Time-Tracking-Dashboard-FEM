@@ -77,6 +77,10 @@ h1 {
   cursor: pointer;
   color: var(--PaleBlue);
 }
+.clicked{
+  color: var(--PaleBlue);
+  font-weight: 500;
+}
 
 .work {
   background: url(images/icon-work.svg);
